@@ -12,15 +12,13 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <style>
-        .intro h1:before {
-            content: 'Chahnaz';
-        }
-        html {
-            scroll-behavior: smooth;
-        }
+        .intro h1:before { content: 'Chahnaz'; }
+        html { scroll-behavior: smooth; }
         .intro p { margin-top: 1rem; line-height: 1.5; }
         .work-list, .award-list, .skill-list { margin-bottom: 1.2rem; }
+        .section { min-height: 400px; } /* ensures sections are scrollable */
         footer .social li a { color: inherit; }
+        img { max-width:100%; border-radius:6px; }
     </style>
 </head>
 <body>
@@ -50,16 +48,169 @@
             <p>Bonjour, je suis Chahnaz</p>
             <div class="units-row units-split wrap">
                 <div class="unit-20">
-                    <img src="https://i.postimg.cc/LhTWKYWn/ava.jpg" alt="Photo Chahnaz" style="max-width:100%; border-radius:6px;">
+                    <img src="https://i.postimg.cc/LhTWKYWn/ava.jpg" alt="Photo Chahnaz">
                 </div>
                 <div class="unit-80">
-                    <h1><span style="font-weight:700;">Chahnaz ALRIFAII</span><br>
-                    <span id="typed"></span></h1>
+                    <h1><span style="font-weight:700;">Chahnaz ALRIFAII</span><br><span id="typed"></span></h1>
                     <p>
                         À la recherche d’un contrat d’Alternance / Stage / ou contrat à Temps Partiel. Passionnée par la communication, le marketing, UX | UI et l'informatique. Engagée, à l’écoute et curieuse, je souhaite évoluer dans un cadre où l’interaction, l’efficacité et la pensée créative guident les projets, tout en mettant mes compétences au service d’initiatives innovantes et stimulantes.
                     </p>
                 </div>
             </div>
+            <div class="units-row" style="margin-top:1rem;">
+                <div class="unit-25"><strong>Téléphone</strong><br>+33 7 53 09 86 39</div>
+                <div class="unit-35"><strong>Email</strong><br><a href="mailto:Rifaichahnaz@gmail.com">Rifaichahnaz@gmail.com</a></div>
+                <div class="unit-40"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/alrifaiichahnaz" target="_blank">linkedin.com/in/alrifaiichahnaz</a></div>
+            </div>
+            <div style="margin-top:0.6rem;">
+                <strong>Localisation :</strong> Paris — <strong>Âge :</strong> 28 ans (1997)
+            </div>
+        </div>
+    </div>
 
-            <div class="units-row" style="margin-top:1
+    <!-- Work Experience -->
+    <div class="work section second" id="experiences">
+        <div class="container">
+            <h1>Expériences<br>Professionnelles</h1>
 
+            <ul class="work-list">
+                <li><strong>2025 (été)</strong></li>
+                <li>Employée polyvalente – Loomi Gastronomie Libanaise, Paris (Job d’été)</li>
+                <li>Design des menus, création du nouveau logo, gestion des réseaux sociaux, vidéaste/photographie, accueil & service client, caissière.</li>
+            </ul>
+
+            <ul class="work-list">
+                <li><strong>2024</strong></li>
+                <li>Stage Graphiste & Spécialiste Marketing Digital – Horizon Web Solution, Beyrouth</li>
+                <li>Conception de visuels et animations pour réseaux sociaux, storytelling, stratégie marketing, optimisation et analyse de performances.</li>
+            </ul>
+
+            <ul class="work-list">
+                <li><strong>2016 – 2023</strong></li>
+                <li>Chargée de Service Bénéficiaires & Chef de Projet – ONG internationales (IRC, MDM, World Vision, GIZ, Arcenciel, IOM, Relief International) – Liban</li>
+                <li>Identification des besoins, coordination d'équipes terrain, suivi des dossiers, reporting qualitatif, pilotage de projets humanitaires et gestion interculturelle.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FORMATIONS -->
+    <div class="award section second" id="achievements">
+        <div class="container">
+            <h1>Formations &amp;<br>Certifications</h1>
+
+            <ul class="award-list list-flat">
+                <li><strong>2025 - 2026</strong></li>
+                <li>Mastère 1 Humanités Numériques — Enjeux et Technologies | Université Paris 8</li>
+            </ul>
+
+            <ul class="award-list list-flat">
+                <li><strong>2025</strong></li>
+                <li>Certificat en Marketing Digital | HubSpot</li>
+            </ul>
+
+            <ul class="award-list list-flat">
+                <li><strong>2024 - 2025</strong></li>
+                <li>DUEF B1 / B2 | Université d’Avignon</li>
+            </ul>
+
+            <ul class="award-list list-flat">
+                <li><strong>2023</strong></li>
+                <li>Licence en Design Graphique (Bac +3) — Université Internationale Libanaise (LIU)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Technical & Soft Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Compétences<br>Techniques &amp; Transversales</h1>
+
+            <ul class="skill-list list-flat">
+                <li><strong>Service client / Communication</strong></li>
+                <li>Relation client, qualité du service, résolution de problèmes, gestion du stress.</li>
+            </ul>
+
+            <ul class="skill-list list-flat">
+                <li><strong>Design & Multimédia</strong></li>
+                <li>Graphisme : identité visuelle, maquettes, affiches ; Vidéo : animation, motion design, production courte.</li>
+            </ul>
+
+            <ul class="skill-list list-flat">
+                <li><strong>Marketing & Réseaux sociaux</strong></li>
+                <li>Création de contenu, stratégie éditoriale, community management, storytelling, publicité (bases).</li>
+            </ul>
+
+            <ul class="skill-list list-flat">
+                <li><strong>Analyse & Gestion</strong></li>
+                <li>Analyse de données, étude de marché, identification de cibles, gestion de projet, planification et coordination opérationnelle.</li>
+            </ul>
+
+            <ul class="skill-list list-flat">
+                <li><strong>Langues</strong></li>
+                <li>Français : courant (B2) — Anglais : courant (B2) — Arabe : bilingue (C2)</li>
+            </ul>
+
+            <ul class="skill-list list-flat">
+                <li><strong>Soft skills</strong></li>
+                <li>Travail en équipe, gestion du stress, relation client, écoute active.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Interests -->
+    <div class="quote">
+        <div class="container text-centered">
+            <h1>Centres d’intérêt</h1>
+            <p>Danse • Lecture • Photographie</p>
+        </div>
+    </div>
+
+    <!-- Contact / Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="units-row">
+                <div class="unit-50">
+                    <h3>Contact</h3>
+                    <p><strong>Chahnaz ALRIFAII</strong><br>
+                    Paris, France<br>
+                    <a href="mailto:Rifaichahnaz@gmail.com">Rifaichahnaz@gmail.com</a><br>
+                    +33 7 53 09 86 39</p>
+                </div>
+                <div class="unit-50">
+                    <h3>Liens</h3>
+                    <ul class="social list-flat right">
+                        <li><a href="mailto:Rifaichahnaz@gmail.com"><i class="fa fa-send"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/alrifaiichahnaz" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-top:1.2rem;">
+                <p>Handcrafted by <strong>Chahnaz Alrifaii</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+        $(function(){
+            $("#typed").typed({
+                strings: [
+                    "Marketing & Communication",
+                    "Graphiste & Créatrice de contenu",
+                    "Étudiante Mastère — Humanités Numériques (Paris 8)"
+                ],
+                typeSpeed: 70,
+                backDelay: 900,
+                contentType: "html",
+                loop: true,
+            });
+        });
+    </script>
+</body>
+</html>
